@@ -1,0 +1,112 @@
+# ------------------------------
+# Python
+# ------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ------------------------------
+# Virtual Environment
+# ------------------------------
+venv/
+.env/
+.venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# ------------------------------
+# Environment Variables
+# ------------------------------
+.env
+.env.*
+*.env
+
+# ------------------------------
+# Logs
+# ------------------------------
+*.log
+logs/
+
+# ------------------------------
+# Database
+# ------------------------------
+*.db
+*.sqlite3
+
+# ------------------------------
+# IDE / Editor
+# ------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ------------------------------
+# OS Files
+# ------------------------------
+.DS_Store
+Thumbs.db
+
+# ------------------------------
+# Pytest / Coverage
+# ------------------------------
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# ------------------------------
+# Mypy / Ruff / Cache
+# ------------------------------
+.mypy_cache/
+.ruff_cache/
+.cache/
+
+# ------------------------------
+# FastAPI specific
+# ------------------------------
+*.pid
+uvicorn.log
+
+# ------------------------------
+# Node (if you have frontend inside)
+# ------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ------------------------------
+# Docker (optional)
+# ------------------------------
+.dockerignore
+*.tar
+
+# ------------------------------
+# Secrets / Keys
+# ------------------------------
+*.pem
+*.key
+secrets/
