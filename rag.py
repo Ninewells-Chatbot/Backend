@@ -77,7 +77,7 @@ def ask_rag(question: str, history: list):
     if date_mode == "today":
         date_instruction = (
             f"Show only doctors available on {resolved_date_str}. "
-            "If a doctor is not available that day, write 'Available: Not today'."
+            "If a doctor is not available that day, write 'Available: -'."
         )
     else:
         date_instruction = "User did not specify a date. Show full schedule for each doctor."
@@ -95,8 +95,6 @@ DATE INTERPRETATION:
 - Always interpret words like "today", "tomorrow", "yesterday" using the CURRENT SRI LANKAN DATE & TIME.
 - When the user asks for a specific day (e.g., tomorrow), ONLY show doctors available on that day.
 - Do NOT include doctors who are NOT available on the requested day.
-- If no doctor is available on that day, politely say:
-  "Unfortunately, no doctors from this specialty are available on <requested day>."
 
 ROLE:
 You assist patients with doctor availability, hospital inquiries, emergencies, and appointment booking (channeling). You behave like a real Ninewells hospital assistant — polite, calm, friendly, and helpful.
