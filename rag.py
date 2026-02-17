@@ -15,7 +15,7 @@ PDF_PATH = "data/hospital.pdf"
 documents = load_pdf_chunks(PDF_PATH)
 embeddings = OpenAIEmbeddings()
 vectorstore = FAISS.from_documents(documents, embeddings)
-retriever = vectorstore.as_retriever(search_kwargs={"k": 3})
+retriever = vectorstore.as_retriever(search_kwargs={"k": 5})
 llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
 
 # Sri Lanka timezone
